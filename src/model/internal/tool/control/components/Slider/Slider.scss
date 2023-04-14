@@ -1,0 +1,76 @@
+// Base Colors
+$shade-10: #2c3e50 !default;
+$shade-1: #d7dcdf !default;
+$shade-0: #fff !default;
+$teal: #cde5f6 !default;
+
+// Range Slider
+$range-width: 100% !default;
+$range-handle-color: $shade-10 !default;
+$range-handle-size: 24px !default;
+$range-track-color: $shade-1 !default;
+$range-track-height: 24px !default;
+$range-track-graph-height: 40px !default;
+$range-handle-graph-size: 40px !default;
+
+.slider-container {
+  margin-top: 18px;
+  margin-bottom: 12px;
+  line-height: 0;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider {
+  width: 100%;
+  height: $range-track-height;
+  -webkit-appearance: none; 
+  appearance: none;
+  margin: 0;
+  background: #c4e8ff;
+
+  // Range Handle
+  &::-webkit-slider-thumb {
+    appearance: none;
+    width: 1px;
+    height: $range-handle-size;
+    background: #00000038;
+    cursor: pointer;
+    transition: background .15s ease-in-out;     
+  }
+
+  &.graph {
+    height: $range-track-graph-height;
+    &::-webkit-slider-thumb {
+      height: $range-handle-graph-size;
+    }
+  }
+
+  &::-moz-range-thumb {
+    appearance: none;
+    width: 1px;
+    height: $range-handle-size;
+    background: #00000038;
+    z-index: 400;
+    cursor: pointer;
+    transition: background .15s ease-in-out;   
+  }
+}
+
+.disabled {
+  background: repeating-linear-gradient(-45deg, transparent, transparent 3px, #bbbbbc 4px, #D0D3D7 2px);
+  cursor: default;
+}
+
+
+// Firefox Overrides
+::-moz-range-track {
+    background: $range-track-color;
+    border: 0;
+}
+
+input::-moz-focus-inner,
+input::-moz-focus-outer { 
+  border: 0; 
+}

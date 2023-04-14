@@ -1,0 +1,31 @@
+.lower-slider, .upper-slider {
+   appearance: none;
+   width: 90%;
+   overflow: hidden;
+   border-radius: 1px;
+   border-bottom: solid 1px #00000038;
+   pointer-events: none;
+
+   &::-webkit-slider-thumb {
+   height: 24px;
+   width: 1px;
+   background-color: #00000038;
+   position: relative;
+   cursor: col-resize;
+   appearance: none;
+   pointer-events: all;
+   }
+}
+  
+  .multi-slider {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 40px;
+   margin-top: 7px;
+
+
+   input[type=range] {
+      position: absolute;
+   }
+  }

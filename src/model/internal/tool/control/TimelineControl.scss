@@ -1,0 +1,43 @@
+.leaflet-timeline {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  width: 800px;
+  height: auto;
+}
+
+.chart {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+ }
+  
+.fa-play, .fa-pause {
+  position: absolute;
+  left: 10px;
+  bottom: 30px;
+  display: flex;
+  font-size: 24px;
+  cursor: pointer; /* Cursor on hover */
+  color: #77828C;
+  margin-top: 3px;
+  margin-right: 10px;
+}
+
+
+
+.fa-chevron-up, .fa-chevron-down {
+  color: rgb(212, 211, 211);
+  text-align: center;
+  padding: 4px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  top: -20px;
+  border: 0;
+  background: #00000038;
+  margin: auto;
+}
